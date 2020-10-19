@@ -1,13 +1,14 @@
 html {
   box-sizing: border-box;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  text-size-adjust: 100%;
 }
 
 *, *::before, *::after {
   box-sizing: inherit;
-}-moz-text-size-adjust: 100%;
--ms-text-size-adjust: 100%;
--webkit-text-size-adjust: 100%;
-text-size-adjust: 100%;
+}
 
 ul {
   display: grid;
@@ -28,6 +29,7 @@ a:hover,
 a:focus {
   color: #acc300;
 }
+
 .icon {
   position: relative;
   height: 8em;
@@ -35,10 +37,14 @@ a:focus {
 }
 
 .icon svg {
-  left: 0l
+  left: 0;
   height: 100%;
   position: absolute;
-  top:0;
-  width: 100%
+  top: 0;
+  width: 100%;
   fill: currentColor;
+}
+
+li {
+  list-style-type: none;
 }
